@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@500;600;700&display=swap');
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+
+*/
+* {
+    margin:0px;
+    padding:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces', serif;
+}
+body {
+    max-width: 1440px;
+    margin:auto;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+.header-area {
+    background: url('./images/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin:auto;
+    padding-top:20px;
+}
+nav .logo {
+    width: 250px;
+}
+nav .logo img {
+    width: 100%;;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color:#ffffff;
+    text-transform: capitalize;
+}
+nav ul li:last-child a {
+    background: #ffffff;
+    padding:12px 20px;
+    border-radius: 50px;
+    color:hsl(213, 9%, 39%);
+}
+nav ul li:last-child a:hover {
+    background:#129de2;
+    color:#ffffff;
+}
+.header-title-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.header-title-area h1 {
+    font-size: 64px;
+    color:#ffffff;
+    margin-bottom:65px;
+    letter-spacing: 2px;
+    
+}
+/* about area */
+.about-area {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-info {
+    width: 50%;
+}
+.about-info .info-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto
+    
+}
+.about-info h2 {
+    font-size: 45px;
+    margin-bottom:40px;
+}
+.about-info p {
+    color:hsl(210, 4%, 67%);
+    line-height: 1.5;
+}
+.leran-more {
+    width: 100%;
+}
+.link-btn {
+margin-top:45px;
+text-align: left;
+text-decoration: none;
+color:#000000;
+display: block;
+font-family: 'Fraunces', serif;
+}
+.link-btn::after {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 4px;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in;
+}
+.link-btn:hover::after {
+    background-color:hsl(7, 99%, 70%);
+}
+.about-img {
+    width: 50%;
+}
+.about-img img {
+    width: 100%;
+}
+/* service area */
+.servie-area {
+    display: flex;
+}
+.service-name1 {
+    background: url("./images/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 80vh;;
+}
+.service-name2 {
+    background: url("./images/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 80vh;;
+}
+.service-info {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top:125px;
+}
+.service-info h3{
+    font-size: 35px;
+    margin-bottom:35px;
+}
+.service-info p{
+    color: hsl(232, 10%, 55%);
+    line-height: 1.5;
+    text-align: center;
+}
+/* testimonial area */
+.testimonial-area {
+    margin:70px 0px;
+}
+.testimonial-area h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom:50px;
+}
+.tst-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.client-rev {
+    text-align: center; 
+}
+.client-img img {
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ text-align: center;
+ margin-bottom:40px;
+}
+.client-rev-desc {
+    color:hsl(213, 9%, 39%);
+    width: 80%;
+    margin:auto;
+    margin-bottom:30px;
+
+}
+.client-name {
+    font-size: 22px;
+    font-family: 'Fraunces', serif;
+    margin-bottom:15px;
+}
+/* products area */
+.product-area {
+    display: flex;
+}
+.single-product {
+    width: 25%;
+}
+.single-product img{
+    width: 100%;
+    height: auto;
+}
+/* footer area */
+footer {
+    background: hsl(168, 34%, 41%);
+    padding: 80px 0px;
+}
+.footer-info {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.footer-logo {
+    width: 250px;
+
+}
+.footer-nav {
+    margin:25px;
+   
+
+}
+.footer-nav a {
+    display: inline-block;
+    margin: 0px 40px;
+    text-decoration: none;
+    color:#ffffff;
+}
+.social-icon {
+    margin: 25px;
+}
+.social-icon a {
+    font-size: 35px;
+    color:#ffffff;
+    margin: 0px 15px;
+}
